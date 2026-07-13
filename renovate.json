@@ -1,0 +1,19 @@
+{
+  "$schema": "https://docs.renovatebot.com/renovate-schema.json",
+  "extends": ["config:recommended", ":semanticCommits"],
+  "labels": ["dependencies"],
+  "schedule": ["before 6am on monday"],
+  "packageRules": [
+    {
+      "description": "Auto-merge dev-dependency and upstream bumps once CI (incl. compat) is green.",
+      "matchDepTypes": ["dependencies", "optional-dependencies", "dev-dependencies"],
+      "automerge": true,
+      "automergeType": "pr"
+    },
+    {
+      "description": "Track the Crawl4AI optional range but never auto-widen it silently.",
+      "matchPackageNames": ["crawl4ai"],
+      "automerge": false
+    }
+  ]
+}
