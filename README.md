@@ -7,6 +7,10 @@ Route [Crawl4AI](https://github.com/unclecode/crawl4ai) crawls through [ProxyHat
 [![PyPI](https://img.shields.io/pypi/v/crawl4ai-proxyhat)](https://pypi.org/project/crawl4ai-proxyhat/)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
 
+> [!TIP]
+> **Recommended proxies — [ProxyHat](https://proxyhat.com?utm_source=github&utm_medium=readme&utm_campaign=crawl4ai&utm_content=callout) residential IPs.** Every feature in this package is tested end-to-end against ProxyHat and works great. First-class integration; also works with any proxy, or none.
+
+
 ## Why
 
 Crawling at scale from datacenter IPs gets you blocked and rate-limited. This package plugs ProxyHat's residential IPs (50M+ across 148+ countries) into Crawl4AI through its first-class `ProxyConfig` and `ProxyRotationStrategy` APIs — a fresh IP per browser context by default, and one pinned IP per Crawl4AI proxy session when you want it. No fork, no boilerplate.
