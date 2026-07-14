@@ -4,7 +4,7 @@ build-backend = "hatchling.build"
 
 [project]
 name = "crawl4ai-proxyhat"
-version = "0.1.0"
+version = "0.1.1"
 description = "ProxyHat residential proxies for Crawl4AI — rotation, geo-targeting, and sticky sessions via the proxy rotation strategy."
 readme = "README.md"
 license = "MIT"
